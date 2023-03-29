@@ -11,7 +11,7 @@ class Node:
             data (int): The data of the new Node.
             next_node (Node): The next node of the new Node.
         """
-        self.data =
+        self.data = data
         self.next_node = next_node
 
     @property
@@ -64,7 +64,7 @@ class SinglyLinkedList:
                     tmp.next_node.data < value):
                 tmp = tmp.next_node
             new.next_node = tmp.next_node
-            mp.next_node = new
+            tmp.next_node = new
 
     def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
